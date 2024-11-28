@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/les-delices-de-paris/static/css/main.a53fac09.css",
-    "main.js": "/les-delices-de-paris/static/js/main.202e3a1c.js",
+    "main.js": "/les-delices-de-paris/static/js/main.1f33e98e.js",
     "static/js/453.e3fa1fae.chunk.js": "/les-delices-de-paris/static/js/453.e3fa1fae.chunk.js",
     "static/media/ChocolateEclair.png": "/les-delices-de-paris/static/media/ChocolateEclair.e11da0d73098ae8a6ea6.png",
     "static/media/Tatin.png": "/les-delices-de-paris/static/media/Tatin.b2d50bce8d372b101b1b.png",
@@ -45,11 +45,11 @@
     "static/media/coffee.avif": "/les-delices-de-paris/static/media/coffee.bc39c91eed82f42d7636.avif",
     "index.html": "/les-delices-de-paris/index.html",
     "main.a53fac09.css.map": "/les-delices-de-paris/static/css/main.a53fac09.css.map",
-    "main.202e3a1c.js.map": "/les-delices-de-paris/static/js/main.202e3a1c.js.map",
+    "main.1f33e98e.js.map": "/les-delices-de-paris/static/js/main.1f33e98e.js.map",
     "453.e3fa1fae.chunk.js.map": "/les-delices-de-paris/static/js/453.e3fa1fae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a53fac09.css",
-    "static/js/main.202e3a1c.js"
+    "static/js/main.1f33e98e.js"
   ]
 }
