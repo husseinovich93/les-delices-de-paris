@@ -1,0 +1,108 @@
+/* src/Receipt.css */
+
+.receipt-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .receipt-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .receipt-container h2 {
+    font-size: 1.5rem;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .receipt-items {
+    margin-bottom: 30px;
+  }
+  
+  .receipt-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+  
+  .receipt-item h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #555;
+  }
+  
+  .receipt-item p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .receipt-summary {
+    margin-bottom: 20px;
+  }
+  
+  .receipt-summary h3 {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 5px 0;
+  }
+  
+  .receipt-summary h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2a9d8f;
+    margin-top: 15px;
+  }
+  
+  .payment-summary {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a9d8f;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .payment-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .payment-summary p {
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .receipt-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .receipt-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .receipt-container h2 {
+      font-size: 1.2rem;
+    }
+  
+    .receipt-item h3 {
+      font-size: 1rem;
+    }
+  
+    .receipt-summary h3 {
+      font-size: 1rem;
+    }
+  
+    .receipt-summary h2 {
+      font-size: 1.1rem;
+    }
+  }
+  

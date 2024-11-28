@@ -1,0 +1,478 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+/* Reset default margin and padding for all elements */
+
+/* Styles for navigation labels */
+.navigation-labels {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between labels */
+    margin-bottom: 40px; /* Add spacing below labels */
+  }
+  
+  .label {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif; /* Modern and clean font */
+    font-size: 1.5rem; /* Larger font size for emphasis */
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Spacing inside the button */
+    border-radius: 8px; /* Rounded corners */
+    background: linear-gradient(158deg, #000000, #8b4513); /* Gradient background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    text-align: center;
+    width: 100%;
+    
+  }
+  
+  .label:hover {
+    background: linear-gradient(45deg, #ff9eb5, #ffaed1); /* Lighter gradient on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%; /* Full height of the viewport */
+    overflow: hidden; /* Hide default scrollbar */
+    margin: 0;     /* Remove default margin */
+    width: 100%;   /* Ensure the body and html take full width */
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    
+  }
+  h1, p {
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* The full-page container */
+  .full-page {
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background-size:cover ;
+    overflow-y: scroll; /* Allow scrolling */
+    scroll-snap-type: y mandatory; /* Enable snapping effect */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+    scrollbar-width: none; /* For Firefox */
+    background-image: url('./assets/Bakery.jpg'); /* Your background image URL */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+      /* Shadow Effect */
+    box-shadow: inset 0 0 400px 200px rgba(0, 0, 0, 0.85); /* Larger shadow */ /* Inner shadow for depth */
+    
+  }
+  
+  /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+  .full-page::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Style each section */
+  .section {
+    height: 100vh;  /* Full viewport height */
+    width: 100%;    /* Full width of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: contain;  /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    position: relative;
+    padding: 0; /* Ensure no padding is adding extra space */
+  }
+  /* Section 1: empty */
+  
+  .section.conEmail{
+    height: 40vh;  /* Full viewport height */
+    
+  }
+  /* Section 2: About Us */
+  .section.about {
+    height: 70vh;
+    background-color: #fff; /* White background for About Us section */
+    padding: 50px 20px; /* Padding around the content */
+    text-align: center;
+  }
+  
+  
+  /* Image Gallery Layout */
+  .image-gallery {
+    display: flex;
+    width: 90vw; /* Full viewport width */
+    justify-content: space-between; /* Distribute space between the columns */
+    gap: 70px; /* Space between the images */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding-bottom: 70px;
+  }
+  
+  /* Image Item Styles */
+  .image-item {
+    flex: 1; /* Allow each item to take equal space */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 280px; /* Height for the image container */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-item img {
+    width: 100%; /* Ensure the images fill the container */
+    height: 100%; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .image-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Paragraphs under images */
+  .image-item p {
+    margin-top: 10px; /* Space between image and text */
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .image-description p {
+    font-family: 'Dancing Script', cursive; /* Signature-style cursive font */
+    font-size: 1.3rem; /* Slightly larger font size to mimic a signature */
+    font-weight: 400; /* Regular weight for a smoother look */
+    text-align: center; /* Center align text */
+    color: #3a2a45; /* Dark ink-like color */
+    text-transform: none; /* Natural case for the signature effect */
+    letter-spacing: 1px; /* A bit more spacing for a flowing signature feel */
+    line-height: 1.5; /* More spacing between lines to allow the signature feel */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 10px 30px; /* Padding for added space around the signature */
+    margin-top: 15px; /* Adds space above the description */
+    margin-bottom: 20px; /* Adds space below */
+   
+    transition: all 0.3s ease; /* Smooth transition effect */
+    transform: rotate(-2deg); /* Slight rotation for a handwritten, signature look */
+  }
+  .image-description p:hover { 
+    cursor: pointer; /* Pointer cursor on hover */
+    transform: rotate(0deg); /* Reset rotation on hover */
+  }
+  /* Optional: Responsive design to make sure images and descriptions stay in line */
+  @media (max-width: 768px) {
+    .section.about .image-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .section.about .image-item {
+      width: 80%;
+    }
+  }
+
+  /* Section 3: Services */
+
+  /* Services Section */
+ .section.services {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 80vh; /* Full viewport height */
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 0; /* Remove padding to avoid layout issues */
+  }
+  
+  .services-container {
+    display: flex;
+    width: 100%; /* Use full width */
+  }
+
+  
+  .services-text {
+    flex: 1; /* Equal width with the image side */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    padding-left: 40px; /* Add padding inside the text block */
+    padding-right: 40px; /* Add padding inside the text block */
+    text-align: left;
+    box-sizing: border-box; /* Ensure padding doesn't affect flex sizing */
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  .services-text h1 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px; /* Space below heading */
+    color: #2c1b2f;
+  }
+  
+  .services-text p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    line-height: 1.6; /* Improve readability with line spacing */
+    color: #333;
+  }
+  
+  .services-image {
+    flex: 1; /* Equal width with the text side */
+    height: 100%; /* Match the height of the section */
+    overflow: hidden; /* Prevent overflow issues */
+    padding-right: 120px;
+    
+  }
+  
+  .services-image img {
+    
+    height: 100%; /* Fill the container's height */
+    object-fit: cover; /* Ensure the image scales without distortion */
+  }
+
+  /* Section 4: Service2 */
+
+  .section.service2 {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 80vh; /* Full viewport height */
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 0; /* Remove padding to avoid layout issues */
+  }
+  
+  .service2-container {
+    display: flex;
+    width: 100%; /* Use full width */
+  }
+
+  .service2-image {
+    flex: 1; /* Equal width with the text side */
+    height: 100%; /* Match the height of the section */
+    overflow: hidden; /* Prevent overflow issues */
+    
+    
+  }
+  
+  .service2-image img {
+    width: 100%; /* Fill the container's width */
+    height: 100%; /* Fill the container's height */
+    object-fit: cover; /* Ensure the image scales without distortion */
+  }
+
+  .service2-text h1 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px; /* Space below heading */
+    color: #2c1b2f;
+  }
+  
+  .service2-text p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    line-height: 1.6; /* Improve readability with line spacing */
+    color: #333;
+    
+  }
+
+  .service2-text {
+    padding-left: 40px; /* Add padding inside the text block */
+    flex: 1; /* Equal width with the image side */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    text-align: left;
+    box-sizing: border-box; /* Ensure padding doesn't affect flex sizing */
+}
+ 
+  /* section subscription*/
+  .subscription-section {
+    padding: 3rem;
+    text-align: center;
+    background-color: #fff7e6; /* Warm bakery-inspired color */
+    border-top: 2px solid #e6cbaa;
+  }
+  
+  .subscription-container {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Georgia', serif; /* Classic, elegant font */
+  }
+  
+  .subscription-container h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #8b4513; /* Dark brown for warmth */
+    margin-bottom: 1rem;
+    
+  }
+  
+  .subscription-container p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #5a3d2b; /* Softer brown for text */
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #5a3d2b;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  #email {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d4a373; /* Light brown border */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkbox-group {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+  }
+  
+  #subscribeCheckbox {
+    margin-right: 0.5rem;
+  }
+  
+  button {
+    font-family: 'Playfair Display', serif;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    background-color: #8b4513; /* Rich brown button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #5a3d2b; /* Slightly darker brown on hover */
+  }
+  
+  button:disabled {
+    background-color: #d3b8a6; /* Disabled state color */
+    cursor: not-allowed;
+  }
+
+
+  .social-media {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .social-media h3 {
+    font-size: 1.5rem;
+    color: #8b4513; /* Matching the subscription section style */
+    margin-bottom: 1rem;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #8b4513; /* Match the bakery aesthetic with a rich brown color */
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #d4a373; /* Light brown on hover for a fancy effect */
+  }
+  
+  .icon.facebook {
+    color: #3b5998; /* Facebook blue */
+  }
+  
+  .icon.twitter {
+    color: #1da1f2; /* Twitter blue */
+  }
+  
+  .icon.instagram {
+    color: #e1306c; /* Instagram pink */
+  }
+
+.content {
+    
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+  
+  .content h1 {
+    font-size: 4rem; /* Large font size */
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif; /* Elegant serif font for the heading */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); /* Soft shadow effect for emphasis */
+  }
+  
+  .section.home .content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: #f0f0f0; /* Light color for contrast */
+    margin-top: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow to add depth */
+  }
+  
+  /* Optional: Add a dimming effect to the background images for readability */
+  .section::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Darken the background image */
+    z-index: -1; /* Place it behind the content */
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5); /* Inner shadow for the background */
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .content h1, .content p {
+    animation: fadeIn 2s ease-out;
+  }

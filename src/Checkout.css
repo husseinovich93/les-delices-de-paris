@@ -1,0 +1,118 @@
+/* src/Checkout.css */
+.checkout-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .order-item-details h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #555;
+  }
+  
+  .order-item-details p {
+    margin: 5px 0;
+    color: #777;
+  }
+  
+  .tax-and-tip {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tax-and-tip h2 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .tip-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .tip-button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tip-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .tip-button.selected {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+  }
+  
+  .total-price {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .payment-info {
+    margin-top: 30px;
+  }
+  
+  .payment-info label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .payment-info input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .payment-info input:focus {
+    border-color: #4CAF50;
+  }
+  
+  .checkout-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-button:hover {
+    background-color: #45a049;
+  }
+  
